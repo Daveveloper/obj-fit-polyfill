@@ -5,20 +5,14 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## Implementation:
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+import objectFitImages from 'object-fit-images';
+in Mount hook call objectFitImages:
+  mounted() {
+    objectFitImages();
+  }
+Add to your CSS classes:
+font-family: 'object-fit: cover; object-position: left bottom;';
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
