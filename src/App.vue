@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Card :alt="alt" :objectFitType="objfit" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Card from './components/Card.vue'
 export default {
   name: 'app',
+  data() {
+    return {
+      alt: 'Hulk image',
+      objfit: 'cover'
+    }
+  },
   components: {
-    HelloWorld
+    Card
   }
 }
 </script>
